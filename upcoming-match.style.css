@@ -55,15 +55,22 @@ main{
     height:auto;
 }
 .watch-btn{
-      background-color: tomato;
-      color:#fff;
-      font-weight: 600;
-      border:2px solid black;
-      outline:none;
-      padding:15px 25px;
-      border-radius: 5px;;
-      font-size: 18px;
-      cursor:pointer;
+    /* background-color: #e13131; */
+    background-color: tomato;
+    color:#fff;
+    font-weight: 600;
+    border:2px solid black;
+    outline:none;
+    padding:15px 20px;
+    border-radius: 5px;;
+    font-size: 18px;
+    cursor:pointer;
+    transition:transform 1s linear;
+}
+.watch-btn:hover{
+    background-color: #e13131;
+    border:none;
+    color:#fff;
 }
 
 
@@ -279,6 +286,10 @@ hr{
     .view-button{
         display:none;
     }
+    .watch-btn:hover{
+        transform: translate(300px,40px);
+    }
+
 }
 
    
@@ -304,6 +315,9 @@ hr{
     }
     .short-quote{
         margin-bottom: 20px;
+    }
+    .watch-btn:hover{
+        transform: translate(200px,50px);
     }
     .thumbnail{
         width:50%;
@@ -402,6 +416,11 @@ hr{
         font-weight:400;
         margin-bottom:25px;
 
+    }
+    .watch-btn:hover{
+        color:#0b0b0b;
+         /* transform: scale(1.25); */
+         transform:translate(-5px,50px);
     }
     .thumbnail{
         width:100%;
