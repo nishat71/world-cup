@@ -1,11 +1,10 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-
 /* common styles or utilities */
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0px;
+    margin:0;
     padding: 0px;
     /* max-width: 1300px; */
 }
@@ -18,10 +17,15 @@ body{
     width: 80%;
     /* height: 75vh; */
     height:auto;
+    /* margin:20px  auto; */
 }
 main{
     padding:30px;
 }
+.wrapper{
+    /* max-width: 1300px; */
+}
+
 
 
 /* ----------------------
@@ -51,24 +55,16 @@ main{
     height:auto;
 }
 .watch-btn{
-    /* background-color: #e13131; */
-    background-color: tomato;
-    color:#fff;
-    font-weight: 600;
-    border:2px solid black;
-    outline:none;
-    padding:15px 20px;
-    border-radius: 5px;;
-    font-size: 18px;
-    cursor:pointer;
-    transition:transform 1s linear;
+      background-color: tomato;
+      color:#fff;
+      font-weight: 600;
+      border:2px solid black;
+      outline:none;
+      padding:15px 25px;
+      border-radius: 5px;;
+      font-size: 18px;
+      cursor:pointer;
 }
-.watch-btn:hover{
-    background-color: #e13131;
-    border:none;
-    color:#fff;
-}
-
 
 
 
@@ -111,7 +107,7 @@ blog section style
     font-weight: 600;
 }
 #btn-blog{
-    background-color:  #f51010;   
+    background-color: #f51010;   
 }
 .sidemenu .btn-blog-link{
     color: #fff;
@@ -121,59 +117,70 @@ blog section style
 
 
 /* ---------------------------- 
-players section start 
+match blog start from here
  ------------------------------- */
-.players-blogs{
+.match-blogs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:24px;
 }
-.single-blog{
-    /* width: 312px;
-    height: 362px; */
+.blog{
     border: 1px solid #ebe1e1;
     border-radius: 10px;
-    margin-bottom:10px;
-}
-.blog-banner img{
     width:100%;
+    /* margin:auto; */
+    /* width:100%; */
+     /* width: 312px;
+    height: 242px; */
 }
-.blog-details{
-    margin:20px;
+.single-blog-area{
+    /* width: 252px;
+    height: 136.18px; */
+    text-align: center;
+    padding:53px 30px;
+
+    
+    /* text-align: center;
+    padding: 53px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; */
 }
-.player-btn{
-    /* width: 100px;
-    height: 32px; */
-    padding: 5px 25px;
-    /* border:2px solid black; */
-}
-.player-btn a{
-    font-size: 16px;
-    color:#333;
-}
-.player-title{
-    font-size: 18px;
-    color:#333;
-}
-.comment-duration{
-    /* width: 143px;
-    height: 26px; */
-    width:70%;
-    display:flex;
+.blog-img-bannar{
+    display: flex;
+    /* width: 252px;
+    height: 56.18px; */
     justify-content: space-between;
     align-items: center;
+}
+.Germany{
+    /* width:100%; */
+    /* width: 93.04px;
+    height: 56.18px; */
+   
+}
+.blog-img-bannar h2{
     font-size: 16px;
-    color: #1f1e1eb3;
+    padding: 0 10px;
 }
-.clock-duration{
+.France{
+    /* width:100%; */
+    /* width: 93.04px;
+    height: 56.18px; */
+}
+.info-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+span{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    color:grey;
+    margin-top:10px;
+}
 
-}
-.fa-clock{
-    margin-right:10px;
-}
-.fa-comment-dots{
-    margin-right:10px;
-}
 
 
 /*----------------------- 
@@ -186,7 +193,7 @@ players section start
 }
 .view-btn{
     padding:15px 40px;
-    background:  #f51010;
+    background: #f51010;
     border-radius: 5px;
     border: none;
     margin: auto;
@@ -199,6 +206,7 @@ players section start
 }
 
 
+
 /* ----------------------------- 
          footer section style 
 -------------------------------- */
@@ -206,7 +214,7 @@ footer{
     /* width: 1600px;
     height: 444px; */
     margin-top:50px;
-    background:  #121212;
+    background: #121212;
     width:100%;
 
 }
@@ -252,9 +260,10 @@ hr{
 }
 .fa-brands:hover{
     background-color:tomato;
-    color:#fff;
+    color:white;
     border-radius: 50%;
 }
+
 
 
 
@@ -270,9 +279,6 @@ hr{
     .view-button{
         display:none;
     }
-    .watch-btn:hover{
-        transform: translate(300px,40px);
-    }
 }
 
    
@@ -283,9 +289,10 @@ hr{
     .container{
         margin: 20px 30px;
         padding-bottom:10px;
+        margin:20px  auto;
     }   
     main{
-        padding:30px;
+        padding:40px;
     } 
     .description-with-info{
         width:50%;
@@ -297,9 +304,6 @@ hr{
     }
     .short-quote{
         margin-bottom: 20px;
-    }
-    .watch-btn:hover{
-        transform: translate(200px,50px);
     }
     .thumbnail{
         width:50%;
@@ -313,8 +317,12 @@ hr{
     .blog-section{
         display:block;
     }
-    .players-blogs{
+    .match-blogs{
         grid-template-columns: repeat(2,1fr);
+    }
+    .single-blog-area{
+         padding: 40px 30px;
+        width: 80%;
     }
     .sidemenu-area{
         padding:10px;
@@ -359,9 +367,6 @@ hr{
     .comment-duration{
         width:50%;
     }
-    .empty-blog{
-        display: none;
-    }
 }
 
 
@@ -398,11 +403,6 @@ hr{
         margin-bottom:25px;
 
     }
-    .watch-btn:hover{
-        color:#0b0b0b;
-         /* transform: scale(1.25); */
-         transform:translate(-5px,50px);
-    }
     .thumbnail{
         width:100%;
         padding-top: 50px;
@@ -415,9 +415,28 @@ hr{
         flex-direction: column;
        
     }
-    .players-blogs{
+    .match-blogs{
         grid-template-columns: repeat(1,1fr);
         gap:16px;
+    }
+    .blog{
+        margin: auto;
+        width: 80%;
+    }
+    .single-blog-area{
+        padding: 40px 30px;
+    }
+
+
+    .blog-img-bannar{
+       justify-content: space-evenly;
+    }
+    
+    .info-title{
+        font-size: 18px;
+    }
+    span{
+        font-size: 14px;
     }
     .sidemenu-area{
         padding:0px 5px;
